@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, h6, p, span {
 body {
   font-family: "Inter";
   color: #fff;
-  background-color: #111;
+  background-color: red;
 }
 
 .header {
@@ -176,11 +176,6 @@ body {
   line-height: 1.3;
   letter-spacing: 0;
   border-radius: 1.875rem;
-  transition: 0.3s;
-}
-.header__btn > a:hover {
-  background-color: #4EF0C7;
-  color: #000;
 }
 .header .lnb {
   position: fixed;
@@ -229,50 +224,4 @@ body {
   justify-content: center;
   align-items: stretch;
   gap: 1rem;
-  width: 42.75rem;
-}
-.header .lnb .recommend__card {
-  width: calc((100% - 1rem) / 2);
-}
-.header .lnb .recommend__card > a {
-  display: block;
-}
-.header .lnb .recommend__card > a:hover {
-  color: #4EF0C7;
-}
-.header .lnb .recommend__card > a:hover .recommend__img::before {
-  opacity: 100;
-}
-.header .lnb .recommend__img {
-  width: 100%;
-  height: 20rem;
-  position: relative;
-}
-.header .lnb .recommend__img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.header .lnb .recommend__img::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(78, 240, 199, 0.5);
-  opacity: 0;
-  transition: 0.3s;
-}
-.header .lnb .recommend__img:hover::before {
-  opacity: 100;
-}
-.header .lnb .recommend__title {
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.3;
-  letter-spacing: 0;
-  margin-top: 1rem;
-  transition: 0.3s;
-}
+}/*# sourceMappingURL=style.css.map */
