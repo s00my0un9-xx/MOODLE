@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Inetr';
+    src: url('../fonts/Inter-Light.woff2') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inetr';
+    src: url('../fonts/Inter-Regular.woff2') format('woff');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inetr';
+    src: url('../fonts/Inter-Medium.woff2') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inetr';
+    src: url('../fonts/Inter-Bold.woff2') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+
+body {
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  letter-spacing: -0.01em;
+}

@@ -1,0 +1,22 @@
+@use 'sass:math';
+
+@function rem($size) {
+    $size : math.div($size, 16);
+    @return #{$size}rem;
+}
+
+// flexbox
+@mixin flex($justifyContent: center, $alignItems: stretch, $gap: null) {
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+    gap: rem($gap);
+}
+
+// font size
+@mixin defineFont($size: null, $weight: 400, $lineHeight: 1.3, $letterSpacing: 0) {
+    font-size: rem($size);
+    font-weight: $weight;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+}
