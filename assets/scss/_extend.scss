@@ -4,3 +4,37 @@
     margin: 0 auto;
     padding: 0 rem(40);
 }
+
+// arrow icon
+.arrow {
+    position: relative;
+    width: rem(15);
+    height: rem(15);
+    transition: .3s;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: rem(9);
+        height: rem(9);
+        border-top: 3px solid currentColor;
+        border-right: 3px solid currentColor;
+        border-radius: 0 2px 0 0;
+    }
+    
+    &.right::before {
+        transform: translate(-70%, -50%) rotate(45deg);
+    }
+    &.left::before {
+        transform: translate(-50%, -70%) rotate(225deg);
+    }
+    &.up::before {
+        transform: translate(-50%, -30%) rotate(315deg);
+    }
+    &.down::before {
+        transform: translate(-30%, -50%) rotate(135deg);
+    }
+}
+
