@@ -7,10 +7,12 @@
 
 // arrow icon
 .arrow {
+    display: inline-block;
     position: relative;
     width: rem(15);
     height: rem(15);
     transition: .3s;
+    vertical-align: middle;
     
     &::before {
         content: '';
@@ -25,16 +27,16 @@
     }
     
     &.right::before {
-        transform: translate(-70%, -50%) rotate(45deg);
+        transform: translate(-50%, -50%) rotate(45deg);
     }
     &.left::before {
-        transform: translate(-50%, -70%) rotate(225deg);
+        transform: translate(-50%, -50%) rotate(225deg);
     }
     &.up::before {
-        transform: translate(-50%, -30%) rotate(315deg);
+        transform: translate(-50%, -50%) rotate(315deg);
     }
     &.down::before {
-        transform: translate(-30%, -50%) rotate(135deg);
+        transform: translate(-50%, -50%) rotate(135deg);
     }
 }
 

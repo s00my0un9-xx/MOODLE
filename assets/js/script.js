@@ -4,7 +4,7 @@ $(function () {
         $(".lnb").stop().slideDown();
     })
 
-    $(".lnb").on('mouseleave', function () {
+    $(".lnb, .header").on('mouseleave', function () {
         $(".lnb").stop().slideUp();
     })
 
