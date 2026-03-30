@@ -18,6 +18,16 @@ button {
   border: none;
 }
 
+h1, h2, h3 {
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+p {
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
 @font-face {
   font-family: "Inetr";
   src: url("../fonts/Inter-Light.woff2") format("woff");
@@ -227,6 +237,7 @@ body {
   left: 0;
   padding: 1.875rem 0.9375rem;
   display: none;
+  z-index: 999;
 }
 .header .lnb__content {
   display: flex;
@@ -358,6 +369,53 @@ body {
   z-index: 1;
 }
 .visual .container {
+  height: 100%;
   position: relative;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.visual__content {
+  margin-top: 15rem;
+  padding: 0 2.5rem;
+}
+.visual__main-text {
+  font-size: 3.375rem;
+  margin-bottom: 1rem;
+}
+.visual__sub-text {
+  font-size: 1.75rem;
+}
+.visual__btn > a {
+  width: 12.8125rem;
+  display: block;
+  padding: 1.25rem 2.5rem;
+  background-color: #4EF0C7;
+  color: #000;
+  font-weight: 700;
+  border-radius: 3.125rem;
+  margin-top: 3.75rem;
+}
+.visual__btn > a:hover {
+  background-color: #4BE2BC;
+}
+.visual__scroll-down {
+  width: 100%;
+}
+.visual__scroll-down .scroll-down-wrap {
+  width: 0.875rem;
+  height: 1.3125rem;
+  margin: 0 auto;
+}
+.visual__scroll-down .scroll-down-wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.visual__scroll-down > p {
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: 0.625rem;
 }
