@@ -285,7 +285,7 @@ body {
     }
 
     &__main-text {
-        font-size:  rem(54);
+        font-size: rem(54);
         margin-bottom: rem(16);
     }
 
@@ -294,7 +294,7 @@ body {
     }
 
     &__btn {
-        > a {
+        >a {
             width: rem(205);
             display: block;
             padding: rem(20) rem(40);
@@ -307,13 +307,29 @@ body {
             &:hover {
                 background-color: $primaryHoverColor;
             }
-        } 
+        }
     }
 
     &__scroll-down {
         width: 100%;
-        
-        .scroll-down-wrap {
+        margin-bottom: rem(30);
+        animation: bounce .8s ease-in infinite;
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(rem(-2));
+            }
+
+            50% {
+                transform: translateY(rem(2));
+            }
+
+            100% {
+                transform: translateY(rem(-2));
+            }
+        }
+
+        .scroll-down-img {
             width: rem(14);
             height: rem(21);
             margin: 0 auto;
@@ -325,10 +341,23 @@ body {
             }
         }
 
-        > p {
+        >p {
             font-size: rem(14);
             text-align: center;
             margin-top: rem(10);
         }
+    }
+}
+
+// kvalue section
+.kvalue {
+    background-color: $blackColor;
+    padding: rem(120) 0 rem(100) 0;
+
+    &__top {
+        padding: rem(40);
+        display: flex;
+        flex-direction: column;
+        gap: rem(60);
     }
 }

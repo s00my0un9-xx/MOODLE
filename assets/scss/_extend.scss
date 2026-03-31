@@ -5,6 +5,17 @@
     padding: 0 rem(40);
 }
 
+.title {
+    font-size: rem(48);
+    font-weight: 700;
+    color: $whiteColor;
+}
+.desc {
+    font-size: rem(20);
+    font-weight: 400;
+    color: $whiteColor;
+}
+
 // arrow icon
 .arrow {
     display: inline-block;
